@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ui-challenge-2</title>
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+  </head>
+  <body>
+    <header>
+      <h1>ui-challenge-2</h1>
+    </header>
+
+    <main>
+      <section class="form-wrap">
+        <form id='sprite-form'>
+          <label> Text Input
+            <input name="text" type="text" placeholder="Placeholder text" required>
+            <span class="error" aria-live="polite">
+          </label> Select
+            <input name="select" type="text" placeholder="Please select an option" readonly required>
+            <ul id="custom-select">
+              <li class="option">Option 1</li>
+              <li class="option">Option 2</li>
+              <li class="option">Option 3</li>
+              <li class="option">Option 4</li>
+              <li class="option">Option 5></li>
+            </ul>
+          <label>Radio
+              <span data-value="1" class="radio-button"></span>
+              <span data-value="0" class="radio-button"></span>
+              <input id="radio-input" name="radio" type="hidden" required>
+          </label>
+          <label> Checkbox
+            <span data-value="checked" class="checkbox"></span>
+            <span data-value="" class="checkbox"></span>
+            <input id="check-input" name="checkbox" type="hidden" required>
+          </label>
+          <label> Buttons
+            <span type="submit" class="submit-btn"></span><span class="submit-btn"></span>
+          </label>
+        </form>
+
+      </section>
+      <section class="view-wrap">
+
+      </section>
+    </main>
+
+  </body>
+</html>
