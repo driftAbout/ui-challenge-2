@@ -6,6 +6,10 @@ section {
   background-color: #FFF;
 }
 
+input{
+  border: 1px solid #ccc;
+}
+
 label, input {
   display: block;
 }
