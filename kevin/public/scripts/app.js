@@ -45,18 +45,24 @@ $(document).ready(function() {
     $(this).siblings('input[type="hidden"]').val($('.check-box.is-checked').length);
   });
 
-
+  //custom valisation for text boxes
   $('input[type="text"]').on('input', function(){
     let op, cls;
     $(this)[0].validity.valid ? (op = 0, cls = '') : (op = 1, cls = 'is-invalid');
     $(this).attr('class', cls);
     $(this).siblings('.error').animate({'opacity': op}, 350);
+    //enable the submit button if there are no invalid fields
+    if ($('#sprite-form .is-invalid').length === 0) $('.submit-btn').removeAttr("disabled");
+
   });
 
+  //custom validation for the radio button
   $('#radio-input').on('change', function(){
     if ($(this).val()){
       $(this).siblings('.error').animate({'opacity': 0}, 350);
       $('.radio-btn-options').removeClass('is-invalid');
+      //enable the submit button if there are no invalid fields
+      if ($('#sprite-form .is-invalid').length === 0) $('.submit-btn').removeAttr("disabled");
     }
   });
 
@@ -68,7 +74,7 @@ $(document).ready(function() {
       $('#sprite-form input[name]').each(function(){
         formData[$(this).attr('name')] = $(this).val();
       });
-      console.log('formData:', formData)
+      console.log('formData:', formData);
     }
   });
 
