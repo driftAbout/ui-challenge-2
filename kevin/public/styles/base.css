@@ -1,0 +1,25 @@
+body {
+  background-color: #dedede;
+}
+
+section {
+  background-color: #FFF;
+}
+
+input{
+  border: 1px solid #ccc;
+}
+
+label, input {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 8px 0;
+}

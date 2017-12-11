@@ -1,0 +1,31 @@
+
+main, header {
+  width: 580px;
+  margin: 0 auto;
+}
+
+.form-wrap{
+  width: 480px;
+  margin: 15px auto;
+}
+
+.view-wrap {
+  width: 480px;
+  margin: 15px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Verdana, sans-serif;
+}
+
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
